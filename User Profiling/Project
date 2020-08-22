@@ -1,0 +1,31 @@
+0. create dataframe out of json
+1. #searches by hour, day, month, year
+https://rakam.io/blog/rakam-google-takeout-importer-analyze-your-google-search-and-location-history-data-ba45e4c66b1c/
+2. word cloud
+3. sentiments of search queries
+https://medium.com/@manivesh/my-google-search-data-analysis-a32337f1be65
+4. TSNE plot, clustering of word embeddings
+https://github.com/danielkychen/GoogleSearchWords/blob/master/GoogleSearchCluster.ipynb
+https://www.machinelearningplus.com/nlp/topic-modeling-visualization-how-to-present-results-lda-models/#14.-pyLDAVis
+5. 
+
+
+
+
+Priority:
+BERT
+pyLDAvis
+
+Complete Profile of a person using search history
+1. interests, likes, profession, other attributes
+2. preprocess the search data✅️
+3. divide into search sessions (dynamic)✅️
+4. topic modelling✅️
+5. fine-grained, coarse-grained topics
+6. Hierarchical topic modeling
+7. Word mover distance
+8. Universal sentence encoder
+9. BERT
+10. CS224d stanford
+11. pyLDAvis
+
