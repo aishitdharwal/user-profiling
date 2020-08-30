@@ -30,8 +30,11 @@ from numpy import zeros
 
 class Sentiment:
     def load_data(self):
-        self.movie_reviews = pd.read_csv("IMDB Dataset/IMDB Dataset.csv")
-        self.glove_file = open('IMDB Dataset/glove.6B.50d.txt', encoding="utf8")
+    	try:
+    		self.movie_reviews = pd.read_csv("IMDB Dataset/IMDB Dataset.csv")
+    		self.glove_file = open('IMDB Dataset/glove.6B.50d.txt', encoding="utf8")
+    	except:
+    		pass
 
     def data_visualize(self):
         sns.countplot(x='sentiment', data=self.movie_reviews)
@@ -149,10 +152,11 @@ class Sentiment:
         plt.legend(['train','test'], loc='upper left')
         plt.show()
         
-obj = Sentiment()
-obj.load_data()
-# obj.data_visualize()
-obj.prepare_data()
-obj.create_model()
-obj.fit_model()
-obj.model_graphs()
+if __name__ == '__main__':
+	obj = Sentiment()
+	obj.load_data()
+	# obj.data_visualize()
+	obj.prepare_data()
+	obj.create_model()
+	obj.fit_model()
+	obj.model_graphs()
